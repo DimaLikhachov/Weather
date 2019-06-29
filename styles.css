@@ -1,0 +1,115 @@
+body {
+  background-image: url('main.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 2px 2px 1px black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.wrapper {
+  display: flex;
+}
+
+.mainContainer {
+  box-sizing: border-box;
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+}
+#weatherContainer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 78%;
+  align-content: flex-start;
+}
+.weatherDescription {
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 5px black;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 200px;
+  height: 250px;
+}
+#searchContainer {
+  padding: 15px 0 58px;
+  text-align: center;
+}
+#searchContainer input {
+  width: 210px;
+}
+#searchContainer button {
+  background-color: rgba(1, 159, 198);
+  width: 75px;
+}
+.searchControl {
+  box-shadow: 2px 2px 5px black;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 5px;
+}
+.btnDeleteCity {
+  position: relative;
+  top: -40px;
+  left: 215px;
+  background: transparent;
+  border: none;
+}
+.crossImg {
+  width: 20px;
+  height: 20px;
+}
+
+.curenImg {
+  width: 60px;
+  height: 40px;
+}
+
+.buy,
+.sale {
+  font-size: 18px;
+}
+#captCurren {
+  background-color: rgba(0, 99, 21, 0.315);
+  box-shadow: 1px 1px 5px black;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.tableCurrency {
+  padding: 10px 0;
+  font-size: 25px;
+  width: 85%;
+  margin: 10px auto;
+  height: 150px;
+  text-align: center;
+  background-color: rgba(0, 99, 21, 0.315);
+  box-shadow: 1px 1px 5px black;
+  border-radius: 5px;
+}
+#geolocationWeather {
+  margin: 10px auto;
+  width: 85%;
+  box-sizing: border-box;
+  padding: 50px;
+  background-color: rgba(255, 210, 107, 0.9);
+  box-shadow: 1px 1px 5px black;
+  border-radius: 10px;
+  text-align: end;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}

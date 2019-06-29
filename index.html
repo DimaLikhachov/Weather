@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="weatherContainer"></div>
+
+      <div class="mainContainer">
+        <div id="searchContainer">
+          <input
+            class="searchControl"
+            type="text"
+            placeholder="City Name"
+            id="searchInput"
+          />
+          <button class="searchControl" id="searchBtn">Add</button>
+        </div>
+
+        <table class="tableCurrency">
+          <caption id="captCurren">
+            Exchange rate in Ukraine
+          </caption>
+          <tr>
+            <td>BUY</td>
+            <td></td>
+            <td>SALE</td>
+          </tr>
+          <tr>
+            <td class="buy"></td>
+            <td><img src="USD.jpg" alt="" class="curenImg" /></td>
+            <td class="sale"></td>
+          </tr>
+          <tr>
+            <td class="buy"></td>
+            <td><img src="EUR.jpg" alt="" class="curenImg" /></td>
+            <td class="sale"></td>
+          </tr>
+          <tr>
+            <td class="buy"></td>
+            <td><img src="RUR.png" alt="" class="curenImg" /></td>
+            <td class="sale"></td>
+          </tr>
+        </table>
+
+        <div id="myCityWeather"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
