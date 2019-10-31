@@ -41,6 +41,7 @@ body {
 #searchContainer {
   padding: 15px 0 58px;
   text-align: center;
+  min-width: 310px;
 }
 #searchContainer input {
   width: 210px;
@@ -91,7 +92,8 @@ body {
 .tableCurrency {
   padding: 10px 0;
   font-size: 25px;
-  width: 85%;
+  /* width: 85%; */
+  min-width: 310px;
   margin: 10px auto;
   height: 150px;
   text-align: center;
@@ -101,7 +103,8 @@ body {
 }
 #geolocationWeather {
   margin: 10px auto;
-  width: 85%;
+  /* width: 85%; */
+  width: 310px;
   box-sizing: border-box;
   padding: 50px;
   background-color: rgba(255, 210, 107, 0.9);
@@ -112,4 +115,34 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+@media screen and (max-width: 1650px) {
+  .mainContainer {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .mainContainer {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .mainContainer {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+  #searchContainer {
+    padding: 15px 0;
+  }
+  #weatherContainer {
+    width: 100%;
+    justify-content: center;
+  }
+  .mainContainer {
+    width: 100%;
+  }
 }
